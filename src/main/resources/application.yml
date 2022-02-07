@@ -4,5 +4,16 @@ spring:
       database: productos
       host: localhost
       port: 27017
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+    timeOfLife: 60000
+springdoc:
+  api-docs:
+    path: /openapi
+  swagger-ui:
+    path: /openapi/index.html
 server:
   port: 8080
